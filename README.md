@@ -17,6 +17,20 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
+### Instalación rápida (1-línea)
+
+- Descarga y ejecuta automáticamente desde la rama `main` a `C:\Users\<tu_usuario>\gorilla`:
+
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -Force; irm "https://raw.githubusercontent.com/cbarria/gorilla/main/scripts/setup.ps1" | iex
+```
+
+- Para instalar y lanzar el juego de inmediato:
+
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -Force; irm "https://raw.githubusercontent.com/cbarria/gorilla/main/scripts/setup.ps1" | iex -Run
+```
+
 ### Ejecución
 
 ```powershell
