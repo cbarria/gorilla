@@ -19,16 +19,30 @@ pip install -r requirements.txt
 
 ### Instalación rápida (1-línea)
 
-- Descarga y ejecuta automáticamente desde la rama `main` a `C:\Users\<tu_usuario>\gorilla`:
+- Ambos comandos siguientes usan la rama `main`. El primero solo instala; el segundo instala y también lanza el juego.
+
+- Windows (instalar a `C:\Users\<tu_usuario>\gorilla`):
 
 ```powershell
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -Force; irm "https://raw.githubusercontent.com/cbarria/gorilla/main/scripts/setup.ps1" | iex
 ```
 
-- Para instalar y lanzar el juego de inmediato:
+- Windows (instalar y lanzar):
 
 ```powershell
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -Force; irm "https://raw.githubusercontent.com/cbarria/gorilla/main/scripts/setup.ps1" | iex -Run
+```
+
+- Linux (instalar a `~/gorilla`):
+
+```bash
+curl -fsSL "https://raw.githubusercontent.com/cbarria/gorilla/main/scripts/setup.sh" | bash
+```
+
+- Linux (instalar y lanzar):
+
+```bash
+curl -fsSL "https://raw.githubusercontent.com/cbarria/gorilla/main/scripts/setup.sh" | bash -s -- --run
 ```
 
 ### Ejecución
